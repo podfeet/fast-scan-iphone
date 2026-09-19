@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A8CFF"/>
+      <stop offset="100%" stop-color="#1E5FD9"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22E7C4" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#22E7C4" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#22E7C4" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1024" height="1024" rx="224" fill="url(#bg)"/>
+
+  <!-- document behind -->
+  <path d="M 300 250 L 560 250 L 640 330 L 640 760 L 300 760 Z"
+        fill="#FFFFFF" opacity="0.92"/>
+  <path d="M 560 250 L 560 330 L 640 330 Z" fill="#CFE0FF"/>
+  <line x1="350" y1="420" x2="590" y2="420" stroke="#9FB8E8" stroke-width="14" stroke-linecap="round"/>
+  <line x1="350" y1="480" x2="590" y2="480" stroke="#9FB8E8" stroke-width="14" stroke-linecap="round"/>
+  <line x1="350" y1="540" x2="520" y2="540" stroke="#9FB8E8" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- phone in front -->
+  <rect x="560" y="360" width="270" height="470" rx="56" fill="#111827"/>
+  <rect x="578" y="392" width="234" height="406" rx="10" fill="#FFFFFF"/>
+  <circle cx="695" cy="378" r="7" fill="#374151"/>
+
+  <!-- scan beam across everything -->
+  <rect x="180" y="470" width="700" height="56" fill="url(#beam)" filter="url(#soft)"/>
+  <rect x="180" y="486" width="700" height="24" fill="#22E7C4"/>
+
+  <!-- viewfinder corner brackets -->
+  <g stroke="#FFFFFF" stroke-width="20" stroke-linecap="round" fill="none" opacity="0.95">
+    <path d="M 150 220 L 150 160 L 210 160"/>
+    <path d="M 874 220 L 874 160 L 814 160"/>
+    <path d="M 150 804 L 150 864 L 210 864"/>
+    <path d="M 874 804 L 874 864 L 814 864"/>
+  </g>
+</svg>
