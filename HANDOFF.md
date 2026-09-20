@@ -54,6 +54,7 @@ At the time of writing none of this work was committed; `HEAD` is still
 | `escape-helper.js` | JXA: posts Escape the same way. Used by `dismissMenu()` to close a stray menu. Shipped inside the app. |
 | `build.sh` | The whole dev loop (see below). |
 | `make-icon.sh`, `icon-matte.swift`, `icon-source.svg` | Icon pipeline. Outputs `AppIcon.iconset`, `AppIcon.icns`, `fast-scan-iphone-icon.png`. |
+| `make-zip.sh` | Packages the app as `FastScan.zip` (just the app) for a GitHub release, and verifies it by unzipping. The zip is git-ignored (`.gitignore`). |
 | `~/Library/Logs/FastScan/scan-log.txt` | Not in the repo. Every step, timestamped in seconds, written immediately so a crash leaves a trail. The previous run's log is kept beside it as `scan-log-previous.txt`. |
 
 **The app is self-contained.** `build.sh` copies `click-helper.js`, `escape-helper.js` and
@@ -241,8 +242,21 @@ app's `Info.plist` (see `lsregister -dump`) and re-reads it only when the bundle
 mtime changes, which a rebuild never does, hence `touch` + `lsregister -f`. If Finder still
 draws the old icon, it's Finder's in-memory copy: `killall Finder`.
 
+## Releasing
+
+Users get the app from a GitHub release, not from the repo: `FastScan.app` is a folder in the
+repo, and GitHub can't download a single folder. To publish: `./build.sh`, then `./make-zip.sh`
+(builds `FastScan.zip` with `ditto`, which keeps the signature and permissions; Finder's Compress
+would add a `__MACOSX` folder because every file in the app carries a `com.apple.provenance`
+attribute), then on GitHub: Releases → Draft a new release → choose the tag → attach
+`FastScan.zip` → publish. The README links to `releases/latest`, so a release must exist. The app
+is ad-hoc signed, not notarized, so a browser download gets quarantined and the README tells users
+to run `xattr -cr` on it (expected macOS behavior; not tested on a real download).
+
 ## Ideas not done
 
 - Keyboard Maestro and Shortcuts versions (would wrap the same script in an "Execute
   AppleScript" action). Only the toolbar button exists.
 - A stable signing identity, to end the permission dance.
+- The root-level `ax-menu` build artifact is tracked in git although the app carries its own copy
+  and every build changes it: `git rm --cached ax-menu` and add it to `.gitignore`.
