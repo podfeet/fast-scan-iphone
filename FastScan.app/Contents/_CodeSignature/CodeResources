@@ -6,15 +6,11 @@
 	<dict>
 		<key>Resources/AppIcon.icns</key>
 		<data>
-		jbKeesyVj1PJUb3NyEXHhmWXo9U=
-		</data>
-		<key>Resources/Assets.car</key>
-		<data>
-		OII6VSiIlzCgEuyYAh8BDOhjOZE=
+		V3WWUTDsOBAZTcQsJUfYgb+pg8I=
 		</data>
 		<key>Resources/Scripts/main.scpt</key>
 		<data>
-		SnnLKpVxKV8C3RT2Ba56iTFfsGM=
+		asddFySC3r5hW1V8Kt0rUhZ6RN0=
 		</data>
 		<key>Resources/applet.icns</key>
 		<data>
@@ -24,6 +20,18 @@
 		<data>
 		UAiInpa6eLz++vWV5Y3xkGTyxlM=
 		</data>
+		<key>Resources/ax-menu</key>
+		<data>
+		svJWiVHaHdN4r+rBnAmTOuf2n6I=
+		</data>
+		<key>Resources/click-helper.js</key>
+		<data>
+		l3jMtLwMdfLXyQlJJQLVzyBmAds=
+		</data>
+		<key>Resources/escape-helper.js</key>
+		<data>
+		S861llGzrXeip9z37ddVPdY26fw=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -31,33 +39,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jbKeesyVj1PJUb3NyEXHhmWXo9U=
+			V3WWUTDsOBAZTcQsJUfYgb+pg8I=
 			</data>
 			<key>hash2</key>
 			<data>
-			GW9Ok/LB7KHtJoXj3H6buv0cKGFryWpUKekL4rBjAsI=
-			</data>
-		</dict>
-		<key>Resources/Assets.car</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OII6VSiIlzCgEuyYAh8BDOhjOZE=
-			</data>
-			<key>hash2</key>
-			<data>
-			Rpn0xOzw5hIlzilJOWf2MXLppK/3HeT4Aw1ScEqI+Z4=
+			d/PwcRm0H+uQ3mMSQt8IMrzdNOOpPPL4QJo7+YAAosM=
 			</data>
 		</dict>
 		<key>Resources/Scripts/main.scpt</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SnnLKpVxKV8C3RT2Ba56iTFfsGM=
+			asddFySC3r5hW1V8Kt0rUhZ6RN0=
 			</data>
 			<key>hash2</key>
 			<data>
-			EFbftfpNYaz5oCGhTzWM0zPV9kDjp+Kz4W10vEaro2E=
+			qYCXQr3bxwZzsVfGvUUSGWzjjIyjXCEcVUQCZGUVKcw=
 			</data>
 		</dict>
 		<key>Resources/applet.icns</key>
@@ -80,6 +77,39 @@
 			<key>hash2</key>
 			<data>
 			mW8W0g/mm4HneQO9OaxltXW+xyef55BVGPMICCe40bs=
+			</data>
+		</dict>
+		<key>Resources/ax-menu</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			svJWiVHaHdN4r+rBnAmTOuf2n6I=
+			</data>
+			<key>hash2</key>
+			<data>
+			BNtEhjO333dbfPBDmOvmJ+8wqe1RqtKKoYC7PmAH7kg=
+			</data>
+		</dict>
+		<key>Resources/click-helper.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			l3jMtLwMdfLXyQlJJQLVzyBmAds=
+			</data>
+			<key>hash2</key>
+			<data>
+			LZTYuuBomjRRVjLiXC04W3e9SY8eOxCzSzvzsqy3dD8=
+			</data>
+		</dict>
+		<key>Resources/escape-helper.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			S861llGzrXeip9z37ddVPdY26fw=
+			</data>
+			<key>hash2</key>
+			<data>
+			FvmmeO7pe02CrdYB0n9X0ETKPJAV1S+Cqly6SzBKB6g=
 			</data>
 		</dict>
 	</dict>
